@@ -53,7 +53,7 @@ nav a:hover {
 /* メインビジュアル */
 #hero {
     height: 100vh;
-    background-image: url('https://lh3.googleusercontent.com/gg/AAHar4d750dbvkKEuJAdlhERxqwsvlhCsyxPvaH5mygMJVUFxcFJ3P0bYbTYb9cUeg927jLhKnGBJzvngW8gbc0QaBIVz8qwvJtgPkSNw1N9wpYdeHkUKONFTMA3sAiIVIS7g5KK4oR1MIbieApmXq38Bm0tOLhvAjYDaqGLH587kZGBagf70WHjF-L-O0t_PgaW1us1_raq6whiAZBoYsy2pxH4uVNksfYgotw5eyQEF08MMAFj5KbF7WkbnRSlTabMhH3NCacG23hhvDeOU8FV2-z3HU5IJ71J3YVbclrz3Nj_vu0RHhfc0vzpLoFjBgjlDXE57pwSIsmEBtZbGf6n0Cmb=s1024'); /* Unsplashのラーメン画像 */
+    background-image: url('https://media.istockphoto.com/id/2064491915/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/pork-bone-ramen.jpg?s=2048x2048&w=is&k=20&c=V5lNgkNmlSHvnSq1ieyNN5WM2TXSoTLxoZNydgLWl6o='); /* Unsplashのラーメン画像 */
     background-size: cover;
     background-position: center;
     display: flex;
