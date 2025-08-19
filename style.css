@@ -53,7 +53,7 @@ nav a:hover {
 /* メインビジュアル */
 #hero {
     height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1552611052-33e34c262d71'); /* Unsplashのラーメン画像 */
+    background-image: url('https://lh3.googleusercontent.com/gg/AAHar4d750dbvkKEuJAdlhERxqwsvlhCsyxPvaH5mygMJVUFxcFJ3P0bYbTYb9cUeg927jLhKnGBJzvngW8gbc0QaBIVz8qwvJtgPkSNw1N9wpYdeHkUKONFTMA3sAiIVIS7g5KK4oR1MIbieApmXq38Bm0tOLhvAjYDaqGLH587kZGBagf70WHjF-L-O0t_PgaW1us1_raq6whiAZBoYsy2pxH4uVNksfYgotw5eyQEF08MMAFj5KbF7WkbnRSlTabMhH3NCacG23hhvDeOU8FV2-z3HU5IJ71J3YVbclrz3Nj_vu0RHhfc0vzpLoFjBgjlDXE57pwSIsmEBtZbGf6n0Cmb=s1024'); /* Unsplashのラーメン画像 */
     background-size: cover;
     background-position: center;
     display: flex;
