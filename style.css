@@ -1,0 +1,130 @@
+/* 基本設定 */
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    margin: 0;
+    color: #fff;
+    background-color: #1a1a1a;
+    scroll-behavior: smooth; /* スムーズスクロールを有効にする */
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ヘッダー */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav a {
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* メインビジュアル */
+#hero {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1552611052-33e34c262d71'); /* Unsplashのラーメン画像 */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    line-height: 1.5;
+}
+
+/* コンテンツセクション共通スタイル */
+.content-section {
+    padding: 100px 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content-body {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.content-body img {
+    max-width: 40%;
+    border-radius: 8px;
+}
+
+.content-body p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+
+/* お品書きセクション */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin-top: 0;
+    color: #f39c12; /* アクセントカラー */
+}
+
+/* 店舗情報セクション */
+.access-info p {
+    font-size: 1.1em;
+    line-height: 2;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+}
