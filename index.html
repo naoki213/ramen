@@ -1,57 +1,143 @@
 <!DOCTYPE html>
-<div>
-<h3>味噌ラーメン</h3>
-<p class="price">¥980</p>
-</div>
-</div>
-<div class="menu-card reveal">
-<img src="./assets/img/gyoza.jpg" alt="手包み餃子" loading="lazy">
-<div>
-<h3>手包み餃子</h3>
-<p class="price">¥420</p>
-</div>
-</div>
-</div>
-<p class="center mt-24"><a class="btn" href="menu.html">フルメニューを見る</a></p>
-</div>
-</section>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ラーメン鳳凰 | Ramen HOUOU</title>
+  <meta name="description" content="透き通る清湯と自家製ちぢれ麺。大阪・中央区のラーメン鳳凰。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ラーメン鳳凰">
+  <meta property="og:description" content="透き通る清湯と自家製ちぢれ麺。大阪・中央区のラーメン鳳凰。">
+  <meta property="og:image" content="./assets/img/hero.jpg">
+  <meta name="theme-color" content="#d83a3a">
+</head>
+<body data-page="index">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="ラーメン鳳凰">
+        <img src="./assets/img/logo.png" srcset="./assets/img/logo@2x.png 2x" alt="ラーメン鳳凰 ロゴ" width="160" height="44" decoding="async" fetchpriority="high" />
+      </a>
+      <button class="nav-toggle" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="index.html" data-nav>ホーム</a>
+        <a href="menu.html" data-nav>メニュー</a>
+        <a href="shop.html" data-nav>店舗案内</a>
+        <a href="news.html" data-nav>お知らせ</a>
+        <a class="btn btn-primary" href="#" target="_blank" rel="noopener">予約する</a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero" style="--hero:url('./assets/img/hero.jpg');">
+      <div class="container hero-inner">
+        <h1 class="display">澄んだ一杯、<br class="sp">まっすぐ。</h1>
+        <p>鶏と香味野菜を丁寧に引き出した清湯スープ。自家製ちぢれ麺が絡む、余韻のある旨み。</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#" target="_blank" rel="noopener">予約する</a>
+          <a class="btn btn-ghost" href="menu.html">メニューを見る</a>
+        </div>
+      </div>
+    </section>
 
-<section class="section" id="access">
-<div class="container two-col">
-<div>
-<h2 class="section-title">アクセス</h2>
-<ul class="info">
-<li><strong>住所：</strong> 大阪市中央区○○1-2-3（架空）</li>
-<li><strong>営業時間：</strong> 11:00–15:00 / 17:00–21:00</li>
-<li><strong>定休日：</strong> 火曜日</li>
-<li><strong>電話：</strong> <a href="tel:0000000000">00-0000-0000</a></li>
-</ul>
-<div class="cta">
-<a class="btn btn-primary" href="#" target="_blank" rel="noopener">予約する</a>
-<a class="btn" href="shop.html">店舗情報</a>
-</div>
-</div>
-<div class="map-wrap reveal">
-<iframe title="Google Map" loading="lazy" src="https://www.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-</div>
-</section>
-</main>
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title">鳳凰のこだわり</h2>
+        <div class="grid cards reveal-group">
+          <article class="card reveal">
+            <img src="./assets/img/broth.jpg" alt="澄んだスープ" loading="lazy">
+            <div class="card-body">
+              <h3>清湯スープ</h3>
+              <p>丸鶏と香味野菜を低温で抽出。透明感とコクを両立しました。</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="./assets/img/noodles.jpg" alt="自家製の麺" loading="lazy">
+            <div class="card-body">
+              <h3>自家製ちぢれ麺</h3>
+              <p>国産小麦を独自ブレンド。スープを持ち上げるもっちり食感。</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="./assets/img/chashu.jpg" alt="チャーシュー" loading="lazy">
+            <div class="card-body">
+              <h3>二種のチャーシュー</h3>
+              <p>炭火の香りをまとわせた豚肩ロースと、しっとり鶏むね。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">おすすめ</h2>
+        <div class="grid menu-picks reveal-group">
+          <div class="menu-card reveal">
+            <img src="./assets/img/ramen1.jpg" alt="特製醤油ラーメン" loading="lazy">
+            <div>
+              <h3>特製醤油ラーメン</h3>
+              <p class="price">¥1,100</p>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="./assets/img/ramen2.jpg" alt="味噌ラーメン" loading="lazy">
+            <div>
+              <h3>味噌ラーメン</h3>
+              <p class="price">¥980</p>
+            </div>
+          </div>
+          <div class="menu-card reveal">
+            <img src="./assets/img/gyoza.jpg" alt="手包み餃子" loading="lazy">
+            <div>
+              <h3>手包み餃子</h3>
+              <p class="price">¥420</p>
+            </div>
+          </div>
+        </div>
+        <p class="center mt-24"><a class="btn" href="menu.html">フルメニューを見る</a></p>
+      </div>
+    </section>
 
-<footer class="site-footer">
-<div class="container foot">
-<small>© <span id="y"></span> Ramen HOUOU</small>
-<nav class="foot-nav">
-<a href="news.html">お知らせ</a>
-<a href="shop.html">店舗案内</a>
-<a href="menu.html">メニュー</a>
-</nav>
-</div>
-</footer>
+    <section class="section" id="access">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title">アクセス</h2>
+          <ul class="info">
+            <li><strong>住所：</strong> 大阪市中央区○○1-2-3（架空）</li>
+            <li><strong>営業時間：</strong> 11:00–15:00 / 17:00–21:00</li>
+            <li><strong>定休日：</strong> 火曜日</li>
+            <li><strong>電話：</strong> <a href="tel:0000000000">00-0000-0000</a></li>
+          </ul>
+          <div class="cta">
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">予約する</a>
+            <a class="btn" href="shop.html">店舗情報</a>
+          </div>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe title="Google Map" loading="lazy" src="https://www.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container foot">
+      <small>© <span id="y"></span> Ramen HOUOU</small>
+      <nav class="foot-nav">
+        <a href="news.html">お知らせ</a>
+        <a href="shop.html">店舗案内</a>
+        <a href="menu.html">メニュー</a>
+      </nav>
+    </div>
+  </footer>
 
-<script src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
