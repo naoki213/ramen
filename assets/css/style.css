@@ -1,0 +1,76 @@
+/* =====================
+===================== */
+.hero{min-height:72vh; display:grid; place-items:center; text-align:center; position:relative; overflow:hidden}
+.hero::before{
+content:""; position:absolute; inset:0;
+background:linear-gradient(180deg, rgba(0,0,0,.4), rgba(0,0,0,.65)), var(--hero, linear-gradient(#222,#111));
+background-size:cover; background-position:center;
+filter:saturate(110%); transform:scale(1.02);
+}
+.hero-inner{position:relative; z-index:1}
+.hero p{opacity:.9; max-width:720px; margin:10px auto 0}
+.cta{display:flex; gap:12px; justify-content:center; margin-top:18px; flex-wrap:wrap}
+
+
+/* =====================
+ボタン
+===================== */
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:.5em; padding:.85em 1.1em; border-radius:999px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.06); color:#fff; font-weight:700; transition:.2s; box-shadow:0 0 0 rgba(0,0,0,0)}
+.btn:hover{transform:translateY(-1px); box-shadow:var(--shadow)}
+.btn-primary{background:linear-gradient(180deg,#ff5a5a,#d83a3a); border-color:transparent; color:var(--accent-ink)}
+.btn-ghost{background:transparent}
+.price{font-weight:900}
+
+
+/* =====================
+カード＆グリッド
+===================== */
+.grid{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:linear-gradient(180deg, #1a1b1e, #141517); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden}
+.card-body{padding:16px}
+.menu-card{display:flex; gap:16px; align-items:center; background:linear-gradient(180deg, #1a1b1e, #141517); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); padding:12px; box-shadow:var(--shadow)}
+
+
+.two-col{display:grid; gap:24px; grid-template-columns:1.1fr .9fr; align-items:start}
+@media (max-width:900px){.two-col{grid-template-columns:1fr}}
+
+
+/* 店舗情報 */
+.info{list-style:none; padding:0; margin:0}
+.info li{padding:8px 0; border-bottom:1px dashed rgba(255,255,255,.08)}
+
+
+.map-wrap{border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid rgba(255,255,255,.06)}
+.map-wrap iframe{width:100%; height:320px; display:block}
+
+
+/* メニュー表 */
+.menu-list{border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); overflow:hidden; background:linear-gradient(180deg,#1b1c1f,#141517)}
+.menu-list .row{display:flex; justify-content:space-between; padding:12px 16px; border-bottom:1px solid rgba(255,255,255,.06)}
+.menu-list .row:last-child{border-bottom:0}
+
+
+/* ニュース */
+.news-list{display:grid; gap:14px}
+.news-card{background:linear-gradient(180deg,#1a1b1e,#141517); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); padding:16px; box-shadow:var(--shadow)}
+.news-card time{display:block; color:var(--muted); font-size:.9em}
+
+
+/* ページヒーロー */
+.page-hero{padding:64px 0 24px; background:radial-gradient(50% 50% at 50% -10%, rgba(216,58,58,.22), transparent 70%)}
+.page-hero h1{margin:0 0 8px; font-weight:900}
+
+
+/* =====================
+フッター
+===================== */
+.site-footer{border-top:1px solid rgba(255,255,255,.06); background:rgba(0,0,0,.3)}
+.foot{display:flex; align-items:center; justify-content:space-between; gap:16px; height:64px}
+.foot-nav{display:flex; gap:14px}
+
+
+/* =====================
+アニメーション（IntersectionObserver）
+===================== */
+.reveal{opacity:0; transform:translateY(12px); transition:opacity .5s ease, transform .5s ease}
+.reveal.in{opacity:1; transform:none}
