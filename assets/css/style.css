@@ -1,4 +1,12 @@
+:root{
+.nav a{padding:12px 10px}
+.nav-open .nav{transform:translateY(0)}
+.nav-wrap{padding-inline:12px}
+}
+
+
 /* =====================
+ヒーロー
 ===================== */
 .hero{min-height:72vh; display:grid; place-items:center; text-align:center; position:relative; overflow:hidden}
 .hero::before{
